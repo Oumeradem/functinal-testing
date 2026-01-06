@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npx cucumber-js",
-    "test:tag": "npx cucumber-js --tags @sep11",
+    "test:tag": "npx cucumber-js --tags @sep16",
     "test:smoke": "npx cucumber-js --tags @smoke",
     "Mac-open:report": "open reports/cucumber-report.html",
     "Windows-open:report": "start reports/cucumber-report.html"
@@ -15,6 +15,7 @@
   "description": "",
   "dependencies": {
     "@cucumber/cucumber": "^10.9.0",
+    "@faker-js/faker": "^10.2.0",
     "@playwright/test": "^1.57.0",
     "@types/cucumber": "^7.0.3",
     "@types/node": "^20.19.27",

@@ -132,6 +132,5 @@ export class PaymentPlanPage extends BasePage {
   public readonly UpfrontText: Locator 
     = this.page.locator("//span[@class='payment-type']");
 
- 
 
 }
