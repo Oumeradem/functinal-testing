@@ -20,7 +20,7 @@ Feature: Click on the next button on payment plans page   #! Test Only
 
     #TODO: Create scenarios that cover all the acceptance criteria
 
-   Scenario: verify that the next button is disabled by default
+    Scenario: verify that the next button is disabled by default
         Given user is on the enrollment page
         And user has completed step one with valid information
         And user is on step two of the enrollment process
