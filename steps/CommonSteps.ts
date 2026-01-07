@@ -27,6 +27,13 @@ Given(
      // await page.waitForTimeout(5000);
       
       await startApplicationPage.nextButton.click();
-
   }
 );
+
+Given("user already completed the payment plans page", async function () {
+  await paymentPlanPage.upfrontPaymentOption.click();
+
+  //await page.waitForTimeout(5000);
+
+  await paymentPlanPage.activeNextButton.click();
+})
