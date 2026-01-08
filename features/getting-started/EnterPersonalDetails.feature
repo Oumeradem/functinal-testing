@@ -17,3 +17,36 @@ Feature: Enter my Personal details
     Background:
         Given user is on the enrollment page
 
+
+    @sep10-1
+    Scenario: Personal detail fields are displayed with correct input types
+        Then the First Name field should be a text input
+        And the Last Name field should be a text input
+        And the Email Address field should be a text input
+        And the Phone Number field should accept numbers only
+
+
+    @sep10-2
+    Scenario: "How did you hear about us?" dropdown is displayed with options
+        Then the "How did you hear about us?" dropdown should be displayed
+        And the dropdown should contain selectable options
+
+
+
+    @sep10-3
+    Scenario: User successfully proceeds when all required personal details are valid
+        When the user enters a valid first name
+        And the user enters a valid last name
+        And the user enters a valid email address
+        And the user enters a valid phone number
+        And the user clicks the Next button on the Personal Details page
+        Then the user should be navigated to the next step
+
+
+    @sep10-4
+    Scenario: Next button does not proceed when required data is invalid
+        When the user enters invalid personal details
+        And the user clicks the Next button on the Personal Details page
+        Then the user should remain on the Personal Details page
+        
+
