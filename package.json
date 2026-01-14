@@ -18,9 +18,11 @@
     "@cucumber/cucumber": "^10.9.0",
     "@faker-js/faker": "^10.2.0",
     "@playwright/test": "^1.57.0",
-    "@types/cucumber": "^7.0.3",
     "@types/node": "^20.19.27",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@types/cucumber": "^6.0.1"
   }
 }
