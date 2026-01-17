@@ -1,9 +1,8 @@
-import { Given, Then, When } from "@cucumber/cucumber";
+import { Then, When } from "@cucumber/cucumber";
 import { expect } from "@playwright/test";
 import {
   startApplicationPage,
   paymentPlanPage,
-  page,
 } from "../../globalPagesSetup";
 import { productInfo } from "../../utilities/qa-data-reader";
 import { faker } from "@faker-js/faker";
@@ -11,17 +10,6 @@ import { faker } from "@faker-js/faker";
 Then("the First Name field should be a text input", async function () {
   await expect(startApplicationPage.firstNameInputBox).toBeVisible();
 });
-
-
-
-
-
-
-
-
-
-
-
 
 Then("the Last Name field should be a text input", async function () {
   await expect(startApplicationPage.lastNameInputBox).toBeVisible();
@@ -97,3 +85,5 @@ When("the user enters invalid personal details", async function () {
 Then("the user should remain on the Personal Details page", async function () {
   await expect(startApplicationPage.firstNameInputBox).toBeVisible();
 });
+
+
