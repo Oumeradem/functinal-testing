@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-  "test": "npx cucumber-js --format json:reports/cucumber.json",
   "test:tag": "npx cucumber-js --tags @sep10 --format json:reports/cucumber.json",
   "test:tag:dryrun": "npx cucumber-js --tags @sep10-4 --dry-run",
   "test:smoke": "npx cucumber-js --tags @smoke --format json:reports/cucumber.json",
